@@ -1,0 +1,56 @@
+.accordion-wrapper {
+	margin: 0 30px;
+
+	h1 {
+		font-family: $font-family_2;
+		font-size: 45px;
+		font-weight: 400;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+.accordion {
+	background-color: $primary-color;
+	color: $tertiary-color;
+    font-family: $font-family_2;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: 26px;
+	transition: 0.4s;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: $tertiary-color;
+
+	&:after {
+		content: "\002B";
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	&:hover {
+		background-color: $quaternary-color;
+	}
+}
+
+.active {
+	&:after {
+		content: "\2212";
+	}
+}
+
+.panel {
+	background-color: $primary-color;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+
+    p {
+        font-family: $font-family_2;
+        padding: 30px;
+        font-size: 16px;
+    }
+}
+}

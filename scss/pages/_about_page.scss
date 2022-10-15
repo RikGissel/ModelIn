@@ -1,0 +1,50 @@
+.about-me {
+    background-image: url(../assets/landing/about.jpg);
+    height: 1000px;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 60px;
+    @include cover-background;
+    @include flex-center;
+
+    .about-me-description {
+        background-color: $primary-color;
+        color: $tertiary-color;
+        font-family: $font-family_2;
+        width: 100%;
+        height: auto;
+        padding: 30px 64px 30px 30px;
+
+        h1 {
+            font-size: 54px;
+            font-weight: 400;
+        }
+
+        p {
+            padding-bottom: inherit;
+        }
+
+        button {
+            background-color: $tertiary-color;
+            font-family: $font-family_2;
+            color: $primary-color;
+            font-size: 16px;
+            height: 40px;
+            width: 103px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+@media (min-width: $lg-breakpoint) {
+    .about-me-description {
+        max-width: 40%;
+        position: absolute;
+        left: 30px;
+    }
+}

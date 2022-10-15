@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logo/logo-modelin.svg">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <div style="height: 150px;"></div>
+    <nav class="header"></nav>
+    <!-- header -->
+    <section class="contact-title">
+        <h1>Contact</h1>
+        <p>Email me to order a design or decoration project, supervision, or ask general questions:<br> Contact form for details on the stages and general design project progress, timing, and budget.</p>
+    </section>
+
+    <form class="contact-form-section">
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" type="text" cols="50" rows="8" placeholder="Message"></textarea>
+        <button value="submit" onclick="showMessage(); removeMessage();">Send Message</button>
+        <aside id="success-message"></aside>
+    </form>
+
+    <div class="details"></div>
+
+    <!-- footer -->
+    <footer class="footer"></footer>
+    <!-- footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="application/javascript" src="../js/API/contact-api.js"></script>
+    <script type="text/javascript" src="../js/components/details.js"></script>
+    <script type="text/javascript" src="../js/components/header.js"></script>
+    <script type="text/javascript" src="../js/components/footer.js"></script>
+</body>
+</html>

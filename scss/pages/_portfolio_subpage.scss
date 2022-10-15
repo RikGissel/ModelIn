@@ -1,0 +1,118 @@
+// first subpage styling
+.subpage-hero-wrapper {
+    height: auto;
+    background-color: $tertiary-color;
+    @include flex-center;
+
+.subpage-hero-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.subpage-hero-items {
+    color: $primary-color;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+
+    i {
+        animation: bounce 2s infinite;
+        color: $primary-color;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+}
+
+.subpage-hero-title {
+    font-weight: 400;
+    font-size: 54px;
+}
+}
+
+.subpage-texts {
+    text-align: center;
+    padding: 30px;
+    scroll-margin-top: 150px;
+
+    h1 {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 53px;
+    }
+
+    p {
+        padding-top: 17px;
+    }
+}
+
+.subpage-infos {
+    text-align: center;
+    padding: 30px;
+
+    h1, p {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+}
+
+.subpage-hero-items, .subpage-texts, .subpage-infos {
+    font-family: $font-family_2;
+}
+
+#subpage-gallery {
+    width: 100%;
+    height: auto;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	column-count: 2;
+	column-gap: 15px;
+    padding: 30px;
+
+	.masonry-grid-item {
+		margin-bottom: 15px;
+		position: relative;
+		break-inside: avoid;
+		width: 100%;
+		will-change: transform;
+		border-radius: 4px;
+		overflow: hidden;
+		box-shadow: 3px 3px 5px -3px rgb(255 255 255 / 30%);
+	}
+}
+
+.gallery-imgs {
+    max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+@media screen and (min-width: $sm-breakpoint) {
+	#subpage-gallery {
+		column-count: 3;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	#subpage-gallery {
+		column-count: 5;
+	}
+}
+
+@media screen and (min-width: $lg-breakpoint) {
+	#subpage-gallery {
+		column-count: 6;
+	}
+}
